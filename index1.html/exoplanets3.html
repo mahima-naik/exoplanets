@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Vision</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: rgb(26, 35, 120);
+      overflow: hidden;
+    }
+
+    /* Fullscreen Video Background */
+    .video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Centering Title and Vision */
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+      width: 80%;
+    }
+
+    /* Title Styling */
+    h1 {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    /* Vision Text Styling */
+    .vision {
+      font-size: 2.5em;
+      line-height: 1.4;
+    }
+
+    /* Adjust Text for Smaller Screens */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5em;
+      }
+      .vision {
+        font-size: 1.8em;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video class="video-bg" autoplay muted loop>
+    <source src="854224-hd_1280_720_30fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Centered Title and Vision -->
+  <div class="content">
+    <h1>Vision</h1>
+    <div class="vision">
+      Our Vision is to explore the vast universe, uncover the mysteries of distant exoplanets, and inspire generations to dream beyond the stars. <br>
+      Together, we push the boundaries of science and technology, fostering curiosity and innovation for a better future.
+    </div>
+  </div>
+
+</body>
+</html>
